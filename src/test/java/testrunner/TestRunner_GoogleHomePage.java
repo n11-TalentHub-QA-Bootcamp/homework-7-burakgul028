@@ -6,8 +6,9 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="resources/features",
-glue="steps")
+@CucumberOptions(features="src/test/resources/features",
+glue="steps",
+tags="@allure")
 public class TestRunner_GoogleHomePage {
 
 }
